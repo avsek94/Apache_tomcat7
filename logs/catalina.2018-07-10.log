@@ -1,0 +1,1576 @@
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 10:33:32 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 10:33:32 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 10:33:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:33:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:33:32 PM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Address already in use (Bind failed) <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:654)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:679)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 16 more
+
+Jul 10, 2018 10:33:33 PM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:654)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:679)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use (Bind failed) <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 16 more
+
+Jul 10, 2018 10:33:33 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 5742 ms
+Jul 10, 2018 10:33:33 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 10:33:33 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 10:33:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 10:33:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 1,657 ms
+Jul 10, 2018 10:33:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 10:33:35 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 286 ms
+Jul 10, 2018 10:33:35 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 10:33:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,213 ms
+Jul 10, 2018 10:33:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 10:33:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 655 ms
+Jul 10, 2018 10:33:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 10:33:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 227 ms
+Jul 10, 2018 10:33:37 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:33:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4720 ms
+Jul 10, 2018 10:33:37 PM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:444)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:793)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:739)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+Jul 10, 2018 10:33:37 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:33:37 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:33:37 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 10:33:38 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:33:38 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:33:38 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:33:38 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 10:37:08 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 10:37:08 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 10:37:09 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:37:09 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:37:09 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3390 ms
+Jul 10, 2018 10:37:09 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 10:37:09 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 10:37:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 10:37:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 1,751 ms
+Jul 10, 2018 10:37:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 10:37:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 378 ms
+Jul 10, 2018 10:37:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 10:37:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,215 ms
+Jul 10, 2018 10:37:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 10:37:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 457 ms
+Jul 10, 2018 10:37:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 10:37:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 230 ms
+Jul 10, 2018 10:37:14 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:37:14 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:37:14 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4508 ms
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 10:41:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 10:41:40 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 10:41:41 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:41:41 PM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use (Bind failed) <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:654)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:679)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 17 more
+
+Jul 10, 2018 10:41:41 PM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:654)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:679)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use (Bind failed) <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 17 more
+
+Jul 10, 2018 10:41:41 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:41:41 PM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Address already in use (Bind failed) <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:654)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:679)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 16 more
+
+Jul 10, 2018 10:41:41 PM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:654)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:679)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use (Bind failed) <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 16 more
+
+Jul 10, 2018 10:41:41 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3946 ms
+Jul 10, 2018 10:41:41 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 10:41:41 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 10:41:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 10:41:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 2,252 ms
+Jul 10, 2018 10:41:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 10:41:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 712 ms
+Jul 10, 2018 10:41:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 10:41:46 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 10:41:46 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:41:46 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:41:46 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 10:41:46 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:41:46 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:41:46 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:41:46 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:41:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 2,385 ms
+Jul 10, 2018 10:41:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 10:41:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 589 ms
+Jul 10, 2018 10:41:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 10:41:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 418 ms
+Jul 10, 2018 10:41:48 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6619 ms
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 10:41:53 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 10:41:53 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 10:41:54 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:41:54 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:41:54 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 5271 ms
+Jul 10, 2018 10:41:55 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 10:41:55 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 10:41:55 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 10:41:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 2,074 ms
+Jul 10, 2018 10:41:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 10:41:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 499 ms
+Jul 10, 2018 10:41:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 10:41:59 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,684 ms
+Jul 10, 2018 10:41:59 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 10:42:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 1,188 ms
+Jul 10, 2018 10:42:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 10:42:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 565 ms
+Jul 10, 2018 10:42:01 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:42:01 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:42:01 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6777 ms
+Jul 10, 2018 10:42:01 PM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:444)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:793)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:739)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+Jul 10, 2018 10:42:01 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:42:01 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:42:01 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 10:42:02 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:42:02 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:42:02 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:42:02 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:44:31 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 10:44:31 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:44:31 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:44:31 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 10:44:31 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:44:31 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:44:31 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:44:31 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 10:44:43 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 10:44:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 10:44:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 10:44:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 10:44:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 10:44:44 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 10:44:44 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 10:44:44 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:44:44 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:44:44 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2649 ms
+Jul 10, 2018 10:44:44 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 10:44:44 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 10:44:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 10:44:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 1,380 ms
+Jul 10, 2018 10:44:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 10:44:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 305 ms
+Jul 10, 2018 10:44:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 10:44:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,413 ms
+Jul 10, 2018 10:44:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 10:44:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 518 ms
+Jul 10, 2018 10:44:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 10:44:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 226 ms
+Jul 10, 2018 10:44:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:44:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:44:49 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4344 ms
+Jul 10, 2018 10:48:39 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 10:48:39 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:48:39 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:48:39 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 10:48:39 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:48:39 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:48:39 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:48:39 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 10:49:05 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 10:49:05 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:49:05 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:49:05 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3238 ms
+Jul 10, 2018 10:49:05 PM org.apache.tomcat.util.digester.Digester fatalError
+SEVERE: Parse Fatal Error at line 46 column 6: Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.seekCloseOfStartTag(XMLDocumentFragmentScannerImpl.java:1385)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1309)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1595)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:424)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:102)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:141)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:848)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:138)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:110)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:82)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:388)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:333)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:751)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+Jul 10, 2018 10:49:05 PM org.apache.naming.NamingContext lookup
+WARNING: Unexpected exception resolving reference
+org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1239)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1595)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:424)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:102)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:141)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:848)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:138)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:110)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:82)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:388)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:333)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:751)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+Jul 10, 2018 10:49:05 PM org.apache.catalina.mbeans.GlobalResourcesLifecycleListener createMBeans
+SEVERE: Exception processing Global JNDI Resources
+javax.naming.NamingException: Unexpected exception resolving reference [Root exception is org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:865)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:138)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:110)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:82)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:388)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:333)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:751)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1239)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1595)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:424)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:102)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:141)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:848)
+	... 20 more
+
+Jul 10, 2018 10:49:06 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 10:49:06 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 10:49:06 PM org.apache.tomcat.util.digester.Digester fatalError
+SEVERE: Parse Fatal Error at line 46 column 6: Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.seekCloseOfStartTag(XMLDocumentFragmentScannerImpl.java:1385)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1309)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1595)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:424)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:102)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:141)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:848)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:253)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:236)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1226)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:300)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:444)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:758)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+Jul 10, 2018 10:49:06 PM org.apache.naming.NamingContext lookup
+WARNING: Unexpected exception resolving reference
+org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1239)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1595)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:424)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:102)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:141)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:848)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:253)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:236)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1226)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:300)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:444)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:758)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+Jul 10, 2018 10:49:06 PM org.apache.catalina.realm.UserDatabaseRealm startInternal
+SEVERE: Exception looking up UserDatabase under key UserDatabase
+javax.naming.NamingException: Unexpected exception resolving reference [Root exception is org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:865)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:253)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:236)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1226)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:300)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:444)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:758)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 6; Element type "vse" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1239)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1595)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:424)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:102)
+	at org.apache.naming.factory.ResourceFactory.getObjectInstance(ResourceFactory.java:141)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:848)
+	... 20 more
+
+Jul 10, 2018 10:49:06 PM org.apache.catalina.realm.CombinedRealm startInternal
+SEVERE: Failed to start "org.apache.catalina.realm.UserDatabaseRealm/1.0" realm
+org.apache.catalina.LifecycleException: Failed to start component [Realm[UserDatabaseRealm]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:236)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1226)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:300)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:444)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:758)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+Caused by: org.apache.catalina.LifecycleException: No UserDatabase component found under key UserDatabase
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 17 more
+
+Jul 10, 2018 10:49:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 10:49:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 1,649 ms
+Jul 10, 2018 10:49:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 10:49:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 274 ms
+Jul 10, 2018 10:49:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 10:49:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,125 ms
+Jul 10, 2018 10:49:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 10:49:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 598 ms
+Jul 10, 2018 10:49:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 10:49:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 195 ms
+Jul 10, 2018 10:49:09 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 10:49:10 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 10:49:10 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4427 ms
+Jul 10, 2018 11:03:18 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 11:03:18 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:03:18 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:03:18 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 11:03:18 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:03:18 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:03:18 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:03:18 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 11:03:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 11:03:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 11:03:28 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 11:03:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:03:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:03:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3237 ms
+Jul 10, 2018 11:03:29 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 11:03:29 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 11:03:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 11:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 1,773 ms
+Jul 10, 2018 11:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 11:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 291 ms
+Jul 10, 2018 11:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 11:03:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,322 ms
+Jul 10, 2018 11:03:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 11:03:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 538 ms
+Jul 10, 2018 11:03:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 11:03:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 383 ms
+Jul 10, 2018 11:03:33 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:03:33 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:03:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4787 ms
+Jul 10, 2018 11:13:18 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 11:13:18 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:13:18 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:13:18 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 11:13:18 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:13:18 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:13:18 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:13:18 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 11:13:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 11:13:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 11:13:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 11:13:27 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 11:13:27 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 11:13:27 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:13:27 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:13:27 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3411 ms
+Jul 10, 2018 11:13:28 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 11:13:28 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 11:13:28 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 11:13:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 1,661 ms
+Jul 10, 2018 11:13:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 11:13:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 309 ms
+Jul 10, 2018 11:13:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 11:13:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,636 ms
+Jul 10, 2018 11:13:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 11:13:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 509 ms
+Jul 10, 2018 11:13:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 11:13:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 245 ms
+Jul 10, 2018 11:13:32 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:13:32 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:13:32 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4718 ms
+Jul 10, 2018 11:16:21 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 11:16:21 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:16:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:16:22 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 11:16:22 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:16:22 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:16:22 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:16:22 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 11:16:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 11:16:36 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 11:16:37 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:16:37 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:16:37 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3175 ms
+Jul 10, 2018 11:16:38 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 11:16:38 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 11:16:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 11:16:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 2,216 ms
+Jul 10, 2018 11:16:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 11:16:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 621 ms
+Jul 10, 2018 11:16:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 11:16:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 2,505 ms
+Jul 10, 2018 11:16:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 11:16:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 1,043 ms
+Jul 10, 2018 11:16:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 11:16:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 322 ms
+Jul 10, 2018 11:16:44 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:16:45 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:16:45 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7330 ms
+Jul 10, 2018 11:24:05 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 11:24:05 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:24:05 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:24:05 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 11:24:05 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:24:05 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:24:05 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:24:05 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 11:24:14 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 11:24:14 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 11:24:15 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:24:15 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:24:15 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3483 ms
+Jul 10, 2018 11:24:15 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 11:24:15 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 11:24:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 11:24:18 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+WARNING: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [137] milliseconds.
+Jul 10, 2018 11:24:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 2,623 ms
+Jul 10, 2018 11:24:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 11:24:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 684 ms
+Jul 10, 2018 11:24:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 11:24:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 2,299 ms
+Jul 10, 2018 11:24:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 11:24:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 649 ms
+Jul 10, 2018 11:24:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 11:24:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 809 ms
+Jul 10, 2018 11:24:23 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:24:23 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:24:23 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7749 ms
+Jul 10, 2018 11:26:39 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 11:26:39 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:26:39 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:26:39 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 11:26:39 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:26:39 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:26:39 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:26:39 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 11:26:57 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 11:26:57 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 11:26:58 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:26:58 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:26:58 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3567 ms
+Jul 10, 2018 11:26:58 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 11:26:58 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 11:26:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 11:27:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 2,153 ms
+Jul 10, 2018 11:27:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 11:27:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 452 ms
+Jul 10, 2018 11:27:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 11:27:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,333 ms
+Jul 10, 2018 11:27:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 11:27:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 576 ms
+Jul 10, 2018 11:27:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 11:27:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 814 ms
+Jul 10, 2018 11:27:04 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:27:04 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:27:04 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6271 ms
+Jul 10, 2018 11:42:49 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 10, 2018 11:42:49 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:42:49 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:42:49 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 10, 2018 11:42:49 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:42:49 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:42:49 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:42:49 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 10, 2018 11:42:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 10, 2018 11:42:58 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 10, 2018 11:42:59 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:42:59 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:42:59 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3302 ms
+Jul 10, 2018 11:42:59 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 10, 2018 11:42:59 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 10, 2018 11:42:59 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 10, 2018 11:43:01 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+WARNING: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [109] milliseconds.
+Jul 10, 2018 11:43:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 1,805 ms
+Jul 10, 2018 11:43:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 10, 2018 11:43:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 267 ms
+Jul 10, 2018 11:43:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 10, 2018 11:43:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 1,131 ms
+Jul 10, 2018 11:43:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 10, 2018 11:43:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 518 ms
+Jul 10, 2018 11:43:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 10, 2018 11:43:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 512 ms
+Jul 10, 2018 11:43:03 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 10, 2018 11:43:03 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 10, 2018 11:43:04 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4512 ms
+Jul 10, 2018 11:44:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/mycontext.war
+Jul 10, 2018 11:44:06 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization started
+Jul 10, 2018 11:44:06 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.XmlWebApplicationContext@7745de1: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Tue Jul 10 23:44:06 PDT 2018]; root of context hierarchy
+Jul 10, 2018 11:44:06 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+Jul 10, 2018 11:44:07 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@7745de1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@47ca121a
+Jul 10, 2018 11:44:07 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47ca121a: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 10, 2018 11:44:07 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization completed in 930 ms
+Jul 10, 2018 11:44:07 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/mycontext.war has finished in 2,819 ms
+Jul 10, 2018 11:45:22 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jul 10, 2018 11:48:55 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/home.war
+Jul 10, 2018 11:48:57 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization started
+Jul 10, 2018 11:48:57 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.XmlWebApplicationContext@1606cc30: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Tue Jul 10 23:48:57 PDT 2018]; root of context hierarchy
+Jul 10, 2018 11:48:57 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+Jul 10, 2018 11:48:57 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@1606cc30]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5bc07fa7
+Jul 10, 2018 11:48:57 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5bc07fa7: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 10, 2018 11:48:57 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization completed in 543 ms
+Jul 10, 2018 11:48:57 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/home.war has finished in 1,891 ms

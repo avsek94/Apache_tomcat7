@@ -1,0 +1,32 @@
+Jul 10, 2018 11:17:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Jul 10, 2018 11:17:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Jul 10, 2018 11:17:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Jul 10, 2018 11:24:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Jul 10, 2018 11:24:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Jul 10, 2018 11:24:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Jul 10, 2018 11:27:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Jul 10, 2018 11:27:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Jul 10, 2018 11:27:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Jul 10, 2018 11:44:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Jul 10, 2018 11:44:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Jul 10, 2018 11:44:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/mycontext'
+Jul 10, 2018 11:44:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to /home/avsek/opt/apache/webapps/mycontext.war
+Jul 10, 2018 11:47:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application 'home'
+Jul 10, 2018 11:48:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/home'
+Jul 10, 2018 11:48:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to /home/avsek/opt/apache/webapps/home.war
