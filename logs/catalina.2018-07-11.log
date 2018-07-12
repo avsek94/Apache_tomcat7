@@ -1,0 +1,130 @@
+Jul 11, 2018 10:57:00 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 11, 2018 10:57:00 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 11, 2018 10:57:00 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 11, 2018 10:57:00 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 11, 2018 10:57:00 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.web.context.support.XmlWebApplicationContext@7745de1: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Tue Jul 10 23:44:06 PDT 2018]; root of context hierarchy
+Jul 11, 2018 10:57:00 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47ca121a: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 11, 2018 10:57:00 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.web.context.support.XmlWebApplicationContext@1606cc30: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Tue Jul 10 23:48:57 PDT 2018]; root of context hierarchy
+Jul 11, 2018 10:57:00 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5bc07fa7: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 11, 2018 10:57:00 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 11, 2018 10:57:00 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 11, 2018 10:57:00 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 11, 2018 10:57:00 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.90
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jul 2 2018 17:05:37 UTC
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.90.0
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/java/jdk1.8.0_131/jre
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_131-b11
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/avsek/opt/apache
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/avsek/opt/apache
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/avsek/opt/apache/conf/logging.properties
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/avsek/opt/apache
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/avsek/opt/apache
+Jul 11, 2018 10:57:07 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/avsek/opt/apache/temp
+Jul 11, 2018 10:57:07 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 11, 2018 10:57:08 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8888"]
+Jul 11, 2018 10:57:08 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 11, 2018 10:57:08 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3331 ms
+Jul 11, 2018 10:57:08 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 11, 2018 10:57:08 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.90
+Jul 11, 2018 10:57:08 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/mycontext.war
+Jul 11, 2018 10:57:12 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization started
+Jul 11, 2018 10:57:12 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.XmlWebApplicationContext@79e5d3e8: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Wed Jul 11 10:57:12 PDT 2018]; root of context hierarchy
+Jul 11, 2018 10:57:12 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+Jul 11, 2018 10:57:13 AM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@79e5d3e8]: org.springframework.beans.factory.support.DefaultListableBeanFactory@129ebc0b
+Jul 11, 2018 10:57:13 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@129ebc0b: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 11, 2018 10:57:13 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization completed in 805 ms
+Jul 11, 2018 10:57:13 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/mycontext.war has finished in 4,707 ms
+Jul 11, 2018 10:57:13 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/home.war
+Jul 11, 2018 10:57:15 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization started
+Jul 11, 2018 10:57:15 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.XmlWebApplicationContext@29f87c6a: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Wed Jul 11 10:57:15 PDT 2018]; root of context hierarchy
+Jul 11, 2018 10:57:15 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-dispatcher-servlet.xml]
+Jul 11, 2018 10:57:15 AM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@29f87c6a]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5736bbdf
+Jul 11, 2018 10:57:15 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5736bbdf: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 11, 2018 10:57:15 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'mvc-dispatcher': initialization completed in 584 ms
+Jul 11, 2018 10:57:15 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /home/avsek/opt/apache-tomcat-7.0.90/webapps/home.war has finished in 2,024 ms
+Jul 11, 2018 10:57:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT
+Jul 11, 2018 10:57:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/ROOT has finished in 143 ms
+Jul 11, 2018 10:57:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs
+Jul 11, 2018 10:57:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/docs has finished in 186 ms
+Jul 11, 2018 10:57:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples
+Jul 11, 2018 10:57:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/examples has finished in 712 ms
+Jul 11, 2018 10:57:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager
+Jul 11, 2018 10:57:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/host-manager has finished in 455 ms
+Jul 11, 2018 10:57:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager
+Jul 11, 2018 10:57:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/avsek/opt/apache-tomcat-7.0.90/webapps/manager has finished in 148 ms
+Jul 11, 2018 10:57:17 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8888"]
+Jul 11, 2018 10:57:17 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 11, 2018 10:57:17 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8917 ms
