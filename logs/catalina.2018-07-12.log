@@ -1,0 +1,22 @@
+Jul 12, 2018 12:12:58 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8888"]
+Jul 12, 2018 12:13:00 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 12, 2018 12:13:00 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 12, 2018 12:13:01 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.web.context.support.XmlWebApplicationContext@79e5d3e8: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Wed Jul 11 10:57:12 PDT 2018]; root of context hierarchy
+Jul 12, 2018 12:13:01 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@129ebc0b: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 12, 2018 12:13:04 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.web.context.support.XmlWebApplicationContext@29f87c6a: display name [WebApplicationContext for namespace 'mvc-dispatcher-servlet']; startup date [Wed Jul 11 10:57:15 PDT 2018]; root of context hierarchy
+Jul 12, 2018 12:13:04 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5736bbdf: defining beans [viewResolver,/welcome.htm]; root of factory hierarchy
+Jul 12, 2018 12:13:05 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8888"]
+Jul 12, 2018 12:13:05 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 12, 2018 12:13:05 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8888"]
+Jul 12, 2018 12:13:05 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
