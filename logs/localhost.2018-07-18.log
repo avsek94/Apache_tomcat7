@@ -26,3 +26,15 @@ Jul 18, 2018 10:36:02 AM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: contextDestroyed()
 Jul 18, 2018 10:36:02 AM org.apache.catalina.core.ApplicationContext log
 INFO: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+Jul 18, 2018 10:59:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+Jul 18, 2018 10:59:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+Jul 18, 2018 10:59:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 18, 2018 10:59:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 18, 2018 10:59:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@aef739c')
+Jul 18, 2018 10:59:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@65c07e5c')
